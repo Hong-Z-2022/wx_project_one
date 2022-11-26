@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wx.brand.mapper.BrandTypeInfoMapper">
+    <resultMap type="com.wx.brand.entity.BrandTypeInfoEntity" id="brandTypeList">
+        <id property="id" column="id_wx_brand_type_list_info"/>
+        <result property="brandTypeCode" column="brand_type_code"/>
+        <result property="brandTypeName" column="brand_type_name"/>
+        <result property="createdBy" column="created_by"/>
+        <result property="createdDate" column="created_date"/>
+        <result property="updatedBy" column="updated_by"/>
+        <result property="updatedDate" column="updated_date"/>
+        <result property="isDeleted" column="is_deleted"/>
+    </resultMap>
+
+
+</mapper>

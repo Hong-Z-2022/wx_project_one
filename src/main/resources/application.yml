@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sales_project?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  liquibase:
+    enabled: false
+    change-log: classpath:db/liquibase/changelog-master.xml
+  mvc:
+    view:
+      prefix: classpath:/templates/   #视图解析器前缀
+      suffix: .html      #视图解析器后缀
+server:
+  port: 8181
+mybatis-plus:
+  type-aliases-package: com.wx.**.entity
+  mapper-locations: classpath*:mapper/**/*.xml
+
